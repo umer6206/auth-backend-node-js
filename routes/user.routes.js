@@ -1,6 +1,6 @@
 // import {createUser} from "../controllers/users.js"
 import { Router } from "express";
-import { asyncErrorHandler } from "../libs/AsyncErrorHandler.js";
+import { asyncErrorHandler } from "../Errors/AsyncErrorHandler.js";
 
 const router = Router();
 router.post(

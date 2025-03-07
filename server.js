@@ -1,6 +1,6 @@
 import express from "express";
 import cookieParser from "cookie-parser";
-import globalErrorHandler from "./libs/globalErrorHandler.js";
+import globalErrorHandler from "./Errors/globalErrorHandler.js";
 const app = express();
 
 app.use(express.json());
@@ -8,7 +8,7 @@ app.use(cookieParser());
 
 // =========================== ALL Imports of Routes  ======================================
 import { FirstRoute, UserRoute } from "./routes/index.routes.js";
-import CustomError from "./libs/customErrorHandler.js";
+import CustomError from "./Errors/customErrorHandler.js";
 
 // first route
 app.use("/first", FirstRoute);

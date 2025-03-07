@@ -1,5 +1,5 @@
 import { Router } from "express";
-import CustomError from "../libs/customErrorHandler.js";
+import CustomError from "../Errors/customErrorHandler.js";
 const router = Router({ mergeParams: true });
 
 const timeLog = (req, res, next) => {
